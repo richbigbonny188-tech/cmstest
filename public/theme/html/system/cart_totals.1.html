@@ -1,0 +1,11 @@
+{*==========================================================================
+  Source File: /GXModules/Gambio/Hub/Shop/Themes/All/cart_totals.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}cart_totals.0.html"}
+
+{block name="cart_totals_checkout_buttons"}
+    {$smarty.block.parent}
+	<div id="easycredit-ratenrechner-cart" class="easycredit-rr-container"
+		 data-easycredithub-namespace="GXModules/Gambio/Hub/Build/Shop/Themes/All/Javascript/easycredithub"
+		 data-easycredithub-widget="easycreditloader"></div>
+{/block}

@@ -1,0 +1,24 @@
+{*==========================================================================
+  Source File: /GXModules/Gambio/CheckoutLoadingSpinner/Shop/Themes/All/checkout_shipping.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}checkout_shipping.0.html"}
+
+{*
+    Checkout shipping template overload
+*}
+
+{block name="checkout_shipping_form"}
+	{$smarty.block.parent}
+    {if $checkout_loading_spinner_is_enabled}
+        {* Loading spinner component *}
+        {include
+            file="get_usermod:GXModules/Gambio/CheckoutLoadingSpinner/Shop/Html/loading-spinner.html"
+            text=$checkout_loading_spinner_text
+            timeout=$checkout_loading_spinner_timeout
+        }
+
+        {* Extender *}
+        <script src="GXModules/Gambio/CheckoutLoadingSpinner/Shop/Themes/All/Javascript/extenders/checkout_shipping.js"></script>
+    {/if}
+{/block}
+

@@ -1,0 +1,52 @@
+{*==========================================================================
+  Source File: /GXModules/Gambio/OmnibusPolicy/Shop/Themes/All/products_reviews.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}products_reviews.0.html"}
+
+{block name="products_reviews_title_if" append}
+    {if $omnibusPolicyProductInfoTextBefore}
+        <div class="product-rating-verification-hint">
+            <p>{$omnibusPolicyProductInfoTextBefore}</p>
+        </div>
+    {/if}
+{/block}
+
+{block name="products_reviews_list" append}
+    {if $omnibusPolicyProductInfoTextAfter}
+        <div class="product-rating-verification-hint">
+            <p>{$omnibusPolicyProductInfoTextAfter}</p>
+        </div>
+    {/if}
+{/block}
+
+{block name="products_reviews_no_reviews_title" append}
+    {if $omnibusPolicyProductInfoTextBefore}
+        <div class="product-rating-verification-hint">
+            <p>{$omnibusPolicyProductInfoTextBefore}</p>
+        </div>
+    {/if}
+{/block}
+
+{block name="products_reviews_no_reviews_text" append}
+    {if $omnibusPolicyProductInfoTextAfter}
+        <div class="product-rating-verification-hint">
+            <p>{$omnibusPolicyProductInfoTextAfter}</p>
+        </div>
+    {/if}
+{/block}
+
+{block name="products_reviews_not_allowed_title" append}
+    {if $omnibusPolicyProductInfoTextBefore}
+        <div class="product-rating-verification-hint">
+            <p>{$omnibusPolicyProductInfoTextBefore}</p>
+        </div>
+    {/if}
+{/block}
+
+{block name="products_reviews_not_allowed_text" append}
+    {if $omnibusPolicyProductInfoTextAfter}
+        <div class="product-rating-verification-hint">
+            <p>{$omnibusPolicyProductInfoTextAfter}</p>
+        </div>
+    {/if}
+{/block}

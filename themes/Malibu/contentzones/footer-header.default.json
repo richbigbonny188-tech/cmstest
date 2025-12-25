@@ -1,0 +1,222 @@
+{
+    "id": "footer-header",
+    "type": "content-zone",
+    "limit": 1,
+    "rows": [
+        {
+            "columnsLayout": {
+                "id": "radioimage-kvkbxwuor",
+                "type": "radioimage",
+                "from": "contentzone",
+                "options": [
+                    {
+                        "id": "fullwidth",
+                        "thumbnail": "http:\/\/gxshop-feature.local\/GXModules\/Gambio\/ContentZones\/Images\/100.png"
+                    },
+                    {
+                        "id": "fifty-fifty",
+                        "thumbnail": "http:\/\/gxshop-feature.local\/GXModules\/Gambio\/ContentZones\/Images\/50-50.png"
+                    },
+                    {
+                        "id": "thirty-three-sixty-six",
+                        "thumbnail": "http:\/\/gxshop-feature.local\/GXModules\/Gambio\/ContentZones\/Images\/33-66.png"
+                    },
+                    {
+                        "id": "sixty-six-thirty-three",
+                        "thumbnail": "http:\/\/gxshop-feature.local\/GXModules\/Gambio\/ContentZones\/Images\/66-33.png"
+                    },
+                    {
+                        "id": "twenty-five-seventy-five",
+                        "thumbnail": "http:\/\/gxshop-feature.local\/GXModules\/Gambio\/ContentZones\/Images\/25-75.png"
+                    },
+                    {
+                        "id": "seventy-five-twenty-five",
+                        "thumbnail": "http:\/\/gxshop-feature.local\/GXModules\/Gambio\/ContentZones\/Images\/75-25.png"
+                    },
+                    {
+                        "id": "three-thirty-three",
+                        "thumbnail": "http:\/\/gxshop-feature.local\/GXModules\/Gambio\/ContentZones\/Images\/33-33-33.png"
+                    },
+                    {
+                        "id": "four-twenty-five",
+                        "thumbnail": "http:\/\/gxshop-feature.local\/GXModules\/Gambio\/ContentZones\/Images\/25-25-25-25.png"
+                    }
+                ],
+                "default": "fifty-fifty",
+                "value": "fullwidth"
+            },
+            "contentAlign": {
+                "id": "checkbox-fkw7huxi3",
+                "type": "checkbox",
+                "label": "Inhalt zentrieren (.container)",
+                "value": false,
+                "labelId": "StyleEdit.contentZone.row.alignment.label"
+            },
+            "responsive": {
+                "id": "responsive-lqpes0woo",
+                "type": "responsive",
+                "from": true,
+                "items": {
+                    "hiddenXs": false,
+                    "hiddenSm": false,
+                    "hiddenMd": false,
+                    "hiddenLg": false
+                }
+            },
+            "background": {
+                "id": "background-lmqz7eiqs",
+                "type": "background",
+                "label": "Hintergrund",
+                "items": {
+                    "color": "rgba(255, 255, 255, 0)",
+                    "image": {
+                        "enabled": false,
+                        "url": "",
+                        "position": "right center",
+                        "repeat": "no-repeat",
+                        "size": "cover",
+                        "attachment": "fixed"
+                    },
+                    "gradient": {
+                        "enabled": false,
+                        "color1": "#ffffff",
+                        "color2": "#000000",
+                        "gradientType": "radial",
+                        "angle": "90deg"
+                    }
+                },
+                "default": {
+                    "color": null,
+                    "image": {
+                        "enabled": false,
+                        "url": "",
+                        "position": "right center",
+                        "repeat": "no-repeat",
+                        "size": "cover",
+                        "attachment": "fixed"
+                    },
+                    "gradient": {
+                        "enabled": false,
+                        "color1": "#ffffff",
+                        "color2": "#000000",
+                        "gradientType": "radial",
+                        "angle": "90deg"
+                    }
+                }
+            },
+            "border": {
+                "id": "border-dihhl5n64",
+                "type": "border",
+                "label": "Rahmen",
+                "items": {
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                    "style": "none",
+                    "color": "red"
+                },
+                "labelId": "StyleEdit.contentZone.border.label"
+            },
+            "class": {
+                "id": "textbox-8fqc4hqdj",
+                "type": "textbox",
+                "label": "Klasse",
+                "value": "textbox-zo6ngj7d6",
+                "labelId": "StyleEdit.contentZone.class.label"
+            },
+            "id": {
+                "id": "textbox-qfig5fml7",
+                "type": "textbox",
+                "label": "ID",
+                "value": "textbox-1bbjmqqgf"
+            },
+            "cols": [
+                {
+                    "widgets": [],
+                    "maxWidgetsLimit": 1,
+                    "background": {
+                        "id": "background-g7cuuzrdq",
+                        "type": "background",
+                        "label": "Hintergrund",
+                        "items": {
+                            "color": "rgba(255, 255, 255, 0)",
+                            "image": {
+                                "enabled": false,
+                                "url": "",
+                                "position": "right center",
+                                "repeat": "no-repeat",
+                                "size": "cover",
+                                "attachment": "fixed"
+                            },
+                            "gradient": {
+                                "enabled": false,
+                                "color1": "#ff0000",
+                                "color2": "#0000ff",
+                                "gradientType": "radial",
+                                "angle": "90deg"
+                            }
+                        },
+                        "default": {
+                            "color": null,
+                            "image": {
+                                "enabled": false,
+                                "url": "",
+                                "position": "right center",
+                                "repeat": "no-repeat",
+                                "size": "cover",
+                                "attachment": "fixed"
+                            },
+                            "gradient": {
+                                "enabled": false,
+                                "color1": "#ff0000",
+                                "color2": "#0000ff",
+                                "gradientType": "radial",
+                                "angle": "90deg"
+                            }
+                        }
+                    },
+                    "border": {
+                        "id": "border-gl988lft6",
+                        "type": "border",
+                        "label": "Rahmen",
+                        "items": {
+                            "top": "0px",
+                            "right": "0px",
+                            "bottom": "0px",
+                            "left": "0px",
+                            "style": "none",
+                            "color": "red"
+                        },
+                        "labelId": "StyleEdit.contentZone.border.label"
+                    },
+                    "responsive": {
+                        "id": "responsive-10w3br4jt",
+                        "type": "responsive",
+                        "items": {
+                            "hiddenXs": false,
+                            "hiddenSm": false,
+                            "hiddenMd": false,
+                            "hiddenLg": false
+                        }
+                    },
+                    "class": {
+                        "id": "class-brb3dy6x4",
+                        "type": "textbox",
+                        "label": "Klasse",
+                        "value": "",
+                        "labelId": "StyleEdit.contentZone.class.label"
+                    },
+                    "id": {
+                        "id": "textbox-oh3pbui1x",
+                        "type": "textbox",
+                        "label": "ID",
+                        "value": "column-id-i13cp20xh"
+                    }
+                }
+            ]
+        }
+    ],
+    "value": null,
+    "shopVersion": "v4.8.0.0"
+}

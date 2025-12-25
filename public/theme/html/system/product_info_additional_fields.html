@@ -1,0 +1,25 @@
+{*==========================================================================
+  Source File: \public\theme\variants\product-variant\classic\html\custom\product_info_additional_fields.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}product_info_additional_fields.0.html"}
+
+{block name="product_info_additional_fields_if"}
+    {if $additional_fields_data_array}
+        {block name="product_info_additional_fields"}
+            {foreach key=key item=item from=$additional_fields_data_array}
+                {block name="product_info_additional_fields_list"}
+                    {block name="product_info_additional_fields_list_item_if"}
+                        {if $item.value}
+                            {block name="product_info_additional_fields_list_item"}
+                                <div class="additional-fields-item">
+                                    <strong>{$item.title}:</strong>
+                                    <span>{$item.value}</span>
+                                </div>
+                            {/block}
+                        {/if}
+                    {/block}
+                {/block}
+            {/foreach}
+        {/block}
+    {/if}
+{/block}

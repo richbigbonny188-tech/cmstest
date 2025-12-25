@@ -1,0 +1,124 @@
+{
+    "id" : "tabs",
+    "title" : "tabsWidget.title",
+    "icon" : {
+        "name" : "Image",
+        "file" : "tabs.svg"
+    },
+    "author" : {
+        "name" : "Gambio GmbH",
+        "email" : "info@gambio.de",
+        "url" : "https://www.gambio.de"
+    },
+    "helpUrl" : "https://www.gambio.de/help",
+    "description" : "tabsWidget.description",
+    "cache" : 0,
+    "version" : "1.0.0",
+    "displayConfig" : "sidebar",
+    "fieldsets" : [
+        {
+            "title" : "tabsWidget.options.content.title",
+            "options" : [
+                {
+                    "id" : "repeater",
+                    "type" : "repeater",
+                    "label" : "tabsWidget.options.repeater.label",
+                    "attributes" : {
+                        "min" : 1,
+                        "itemLabel" : "tabsWidget.options.attributes.itemLabel",
+                        "addMoreLabel" : "tabsWidget.options.attributes.addMoreLabel",
+                        "canSetDefaultActiveIndex" : true,
+                        "defaultActiveIndex" : 0
+                    },
+                    "fields" : [
+                        {
+                            "id" : "title",
+                            "type" : "textbox",
+                            "translatable" : true,
+                            "label" : "tabsWidget.options.title.label",
+                            "default" : {
+                                "en" : "",
+                                "de" : ""
+                            }
+                        },
+                        {
+                            "id" : "content",
+                            "default" : {
+                                "en" : {
+                                    "value" : ""
+                                },
+                                "de" : {
+                                    "value" : ""
+                                }
+                            },
+                            "type" : "texteditor",
+                            "translatable" : true,
+                            "label" : "tabsWidget.options.content.label",
+                            "attributes" : {
+                                "placeholder" : "tabsWidget.options.content.placeholder"
+                            }
+                        }
+                    ],
+                    "default" : [
+                        [
+                            {
+                                "id" : "tab-title",
+                                "type" : "textbox",
+                                "translatable" : true,
+                                "label" : "tabsWidget.options.title.label",
+                                "default" : {
+                                    "en" : "",
+                                    "de" : ""
+                                },
+                                "repeaterField": "title"
+                            },
+                            {
+                                "id" : "tab-content",
+                                "default" : {
+                                    "en" : {
+                                        "value" : ""
+                                    },
+                                    "de" : {
+                                        "value" : ""
+                                    }
+                                },
+                                "type" : "texteditor",
+                                "translatable" : true,
+                                "label" : "tabsWidget.options.content.label",
+                                "attributes" : {
+                                    "placeholder" : "tabsWidget.options.content.placeholder"
+                                },
+                                "repeaterField": "content"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "tabsWidget.options.general.title",
+            "options" : [
+                {
+                    "id" : "id",
+                    "default" : "",
+                    "type" : "textbox",
+                    "value" : "",
+                    "attributes" : {
+                        "placeholder" : "tabsWidget.options.id.placeholder"
+                    },
+                    "label" : "tabsWidget.options.id.label"
+                },
+                {
+                    "id" : "class",
+                    "default" : "",
+                    "type" : "textbox",
+                    "value" : "",
+                    "attributes" : {
+                        "placeholder" : "tabsWidget.options.class.placeholder"
+                    },
+                    "label" : "tabsWidget.options.class.label"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,339 @@
+{
+    "id" : "carousel",
+    "title" : "carouselWidget.title",
+    "icon" : {
+        "name" : "Carousel",
+        "file" : "carousel.svg"
+    },
+    "author" : {
+        "name" : "Gambio GmbH",
+        "email" : "info@gambio.de",
+        "url" : "https://www.gambio.de"
+    },
+    "helpUrl" : "https://www.gambio.de/help",
+    "description" : "carouselWidget.description",
+    "cache" : 0,
+    "version" : "1.0.0",
+    "displayConfig" : "sidebar",
+    "fieldsets" : [
+        {
+            "title" : "carouselWidget.options.contents.title",
+            "options" : [
+                {
+                    "id" : "repeater",
+                    "type" : "repeater",
+                    "label" : "carouselWidget.options.repeater.label",
+                    "attributes" : {
+                        "min" : 1,
+                        "itemLabel": "carouselWidget.options.repeater.attributes.itemLabel",
+                        "addMoreLabel" : "carouselWidget.options.repeater.attributes.addMoreLabel",
+                        "canSetDefaultActiveIndex" : true,
+                        "defaultActiveIndex" : 0
+                    },
+                    "fields" : [
+                        {
+                            "id" : "caption-title",
+                            "type" : "textbox",
+                            "translatable" : true,
+                            "label" : "carouselWidget.options.repeater.fields.caption-title.label",
+                            "default" : {
+                                "en" : "",
+                                "de" : ""
+                            }
+                        },
+                        {
+                            "id" : "caption-tagline",
+                            "type" : "textbox",
+                            "translatable" : true,
+                            "label" : "carouselWidget.options.repeater.fields.caption-tagline.label",
+                            "default" : {
+                                "en" : "",
+                                "de" : ""
+                            }
+                        },
+                        {
+                            "id": "image",
+                            "label": "carouselWidget.options.repeater.fields.image.label",
+                            "type": "imageupload",
+                            "translatable": true,
+                            "default": {
+                                "de": "",
+                                "en": ""
+                            },
+                            "attributes": {
+                                "responsiveFilemanagerFolder": "images/slider_images"
+                            }
+                        },
+                        {
+                            "id": "image-landscape",
+                            "label": "carouselWidget.options.repeater.fields.image-landscape.label",
+                            "type": "imageupload",
+                            "translatable": true,
+                            "default": {
+                                "de": "",
+                                "en": ""
+                            },
+                            "attributes": {
+                                "responsiveFilemanagerFolder": "images/slider_images"
+                            }
+                        },
+                        {
+                            "id": "image-portrait",
+                            "label": "carouselWidget.options.repeater.fields.image-portrait.label",
+                            "type": "imageupload",
+                            "translatable": true,
+                            "default": {
+                                "de": "",
+                                "en": ""
+                            },
+                            "attributes": {
+                                "responsiveFilemanagerFolder": "images/slider_images"
+                            }
+                        },
+                        {
+                            "id": "image-smartphone",
+                            "label": "carouselWidget.options.repeater.fields.image-smartphone.label",
+                            "type": "imageupload",
+                            "translatable": true,
+                            "default": {
+                                "de": "",
+                                "en": ""
+                            },
+                            "attributes": {
+                                "responsiveFilemanagerFolder": "images/slider_images"
+                            }
+                        },
+                        {
+                            "id" : "alt-title",
+                            "type" : "textbox",
+                            "translatable" : true,
+                            "label" : "carouselWidget.options.repeater.fields.alt-title.label",
+                            "default" : {
+                                "en" : "",
+                                "de" : ""
+                            }
+                        },
+                        {
+                            "id" : "slide-link",
+                            "type" : "textbox",
+                            "translatable" : true,
+                            "label" : "carouselWidget.options.repeater.fields.slide-link.label",
+                            "default" : {
+                                "en" : "",
+                                "de" : ""
+                            }
+                        },
+                        {
+                            "id" : "slide-link-target",
+                            "type" : "dropdownselect",
+                            "translatable" : false,
+                            "label" : "carouselWidget.options.repeater.fields.slide-link-target.label",
+                            "default": "_blank",
+                            "options": [
+                                {
+                                    "value": "_blank",
+                                    "text": "carouselWidget.options.repeater.fields.slide-link-target.blank"
+                                },
+                                {
+                                    "value": "_self",
+                                    "text": "carouselWidget.options.repeater.fields.slide-link-target.self"
+                                }
+                            ]
+                        }
+                    ],
+                    "default" : [
+                        [
+                            {
+                                "id" : "carousel-caption-title",
+                                "type" : "textbox",
+                                "translatable" : true,
+                                "label" : "carouselWidget.options.repeater.fields.caption-title.label",
+                                "default" : {
+                                    "en" : "",
+                                    "de" : ""
+                                },
+                                "repeaterField" : "caption-title"
+                            },
+                            {
+                                "id" : "carousel-caption-tagline",
+                                "type" : "textbox",
+                                "translatable" : true,
+                                "label" : "carouselWidget.options.repeater.fields.caption-tagline.label",
+                                "default" : {
+                                    "en" : "",
+                                    "de" : ""
+                                },
+                                "repeaterField" : "caption-tagline"
+                            },
+                            {
+                                "id" : "carousel-image",
+                                "label": "carouselWidget.options.repeater.fields.image.label",
+                                "type": "imageupload",
+                                "translatable": true,
+                                "default": {
+                                    "de": "",
+                                    "en": ""
+                                },
+                                "repeaterField" : "image",
+                                "attributes": {
+                                    "responsiveFilemanagerFolder": "images/slider_images"
+                                }
+                            },
+                            {
+                                "id": "carousel-image-landscape",
+                                "label": "carouselWidget.options.repeater.fields.image-landscape.label",
+                                "type": "imageupload",
+                                "translatable": true,
+                                "default": {
+                                    "de": "",
+                                    "en": ""
+                                },
+                                "repeaterField": "image-landscape",
+                                "attributes": {
+                                    "responsiveFilemanagerFolder": "images/slider_images"
+                                }
+                            },
+                            {
+                                "id": "carousel-image-portrait",
+                                "label": "carouselWidget.options.repeater.fields.image-portrait.label",
+                                "type": "imageupload",
+                                "translatable": true,
+                                "default": {
+                                    "de": "",
+                                    "en": ""
+                                },
+                                "repeaterField": "image-portrait",
+                                "attributes": {
+                                    "responsiveFilemanagerFolder": "images/slider_images"
+                                }
+                            },
+                            {
+                                "id": "carousel-image-smartphone",
+                                "label": "carouselWidget.options.repeater.fields.image-smartphone.label",
+                                "type": "imageupload",
+                                "translatable": true,
+                                "default": {
+                                    "de": "",
+                                    "en": ""
+                                },
+                                "repeaterField": "image-smartphone",
+                                "attributes": {
+                                    "responsiveFilemanagerFolder": "images/slider_images"
+                                }
+                            },
+                            {
+                                "id" : "carousel-alt-title",
+                                "type" : "textbox",
+                                "translatable" : true,
+                                "label" : "carouselWidget.options.repeater.fields.alt-title.label",
+                                "default" : {
+                                    "en" : "",
+                                    "de" : ""
+                                },
+                                "repeaterField" : "alt-title"
+                            },
+                            {
+                                "id" : "carousel-slide-link",
+                                "type" : "textbox",
+                                "translatable" : true,
+                                "label" : "carouselWidget.options.repeater.fields.slide-link.label",
+                                "default" : {
+                                    "en" : "",
+                                    "de" : ""
+                                },
+                                "repeaterField" : "slide-link"
+                            },
+                            {
+                                "id" : "carousel-slide-link-target",
+                                "type" : "dropdownselect",
+                                "translatable" : false,
+                                "label" : "carouselWidget.options.repeater.fields.slide-link-target.label",
+                                "default": "_blank",
+                                "options": [
+                                    {
+                                        "value": "_blank",
+                                        "text": "carouselWidget.options.repeater.fields.slide-link-target.blank"
+                                    },
+                                    {
+                                        "value": "_self",
+                                        "text": "carouselWidget.options.repeater.fields.slide-link-target.self"
+                                    }
+                                ],
+                                "repeaterField" : "slide-link-target"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "carouselWidget.options.settings.title",
+            "options" : [
+                {
+                    "id" : "fadeEffect",
+                    "default" : true,
+                    "type" : "checkbox",
+                    "label" : "carouselWidget.options.fadeEffect.label"
+                },
+                {
+                    "id" : "infiniteLoop",
+                    "default" : true,
+                    "type" : "checkbox",
+                    "label" : "carouselWidget.options.infiniteLoop.label"
+                },
+                {
+                    "id" : "pauseOnHover",
+                    "default" : true,
+                    "type" : "checkbox",
+                    "label" : "carouselWidget.options.pauseOnHover.label"
+                },
+                {
+                    "id" : "showIndicators",
+                    "default" : true,
+                    "type" : "checkbox",
+                    "label" : "carouselWidget.options.showIndicators.label"
+                },
+                {
+                    "id" : "showControls",
+                    "default" : true,
+                    "type" : "checkbox",
+                    "label" : "carouselWidget.options.showControls.label"
+                },
+                {
+                    "id" : "slideInterval",
+                    "default" : "3",
+                    "type" : "textbox",
+                    "attributes" : {
+                        "placeholder" : "3",
+                        "type" : "number",
+                        "min": "1"
+                    },
+                    "label" : "carouselWidget.options.slideInterval.label"
+                }
+            ]
+        },
+        {
+            "title" : "carouselWidget.options.general.title",
+            "options" : [
+                {
+                    "id" : "id",
+                    "default" : "",
+                    "type" : "textbox",
+                    "attributes" : {
+                        "placeholder" : "carouselWidget.options.id.placeholder"
+                    },
+                    "label" : "carouselWidget.options.id.label"
+                },
+                {
+                    "id" : "class",
+                    "default" : "",
+                    "type" : "textbox",
+                    "attributes" : {
+                        "placeholder" : "carouselWidget.options.class.placeholder"
+                    },
+                    "label" : "carouselWidget.options.class.label"
+                }
+            ]
+        }
+    ]
+}

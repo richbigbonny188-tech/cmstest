@@ -1,0 +1,16 @@
+{*==========================================================================
+  Source File: /GXModules/Gambio/KlarnaOSM/Shop/Themes/All/cart_totals.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}cart_totals.1.html"}
+
+{block name="cart_totals_checkout_buttons"}
+    {$smarty.block.parent}
+    {if $KLARNAOSM_CART}
+        <div class="klarnaosm klarnaosm_cart" 
+             data-klarnaosm-namespace="GXModules/Gambio/KlarnaOSM/Build/Shop/Themes/All/Javascript"
+             data-klarnaosm-widget="klarnaosmcart"
+        >
+            {$KLARNAOSM_CART}
+        </div>
+    {/if}
+{/block}

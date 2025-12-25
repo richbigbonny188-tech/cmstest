@@ -1,0 +1,79 @@
+
+######################################################################
+
+[2025-12-25 18:02:29 | NOTICE] ================================================================================
+
+2025-12-25 18:02:26 (837ec5754f503cfaaee0929fd48974e7) USER NOTICE: "Mail Funktion konnte nicht initialisiert werden." in C:\xampp\htdocs\inc\xtc_php_mail.inc.php:163
+
+#11	File: C:\xampp\htdocs\inc\xtc_php_mail.inc.php:163
+
+
+#10	File: C:\xampp\htdocs\GXMainComponents\Extensions\Customers\CreateAccountProcess.inc.php:441
+
+
+#9	File: C:\xampp\htdocs\GXMainComponents\Extensions\Customers\CreateAccountProcess.inc.php:338
+
+
+#8	File: C:\xampp\htdocs\GXMainComponents\Extensions\Customers\AbstractCreateAccountProcess.inc.php:76
+
+
+#7	File: C:\xampp\htdocs\GXModules\Gambio\SingleSignOn\Shop\Overloads\CreateAccountProcess\CreateSSOAccountProcess.inc.php:16
+
+
+#6	File: C:\xampp\htdocs\GXMainComponents\Controllers\HttpView\Shop\CreateRegistreeController.inc.php:69
+
+
+#5	File: C:\xampp\htdocs\system\overloads\CreateRegistreeController\CreateRegistreeControllerOverload.inc.php:24
+
+
+#4	File: C:\xampp\htdocs\GXEngine\Services\System\Http\HttpViewController.inc.php:148
+
+
+#3	File: C:\xampp\htdocs\GXEngine\Services\System\Http\HttpViewController.inc.php:107
+
+
+#2	File: C:\xampp\htdocs\GXEngine\Services\System\Http\HttpDispatcher.inc.php:71
+
+
+#1	File: C:\xampp\htdocs\GXEngine\Services\System\Http\HttpService.inc.php:66
+
+
+#0	File: C:\xampp\htdocs\shop.php:29
+
+
+Request: POST /shop.php?do=CreateRegistree/Proceed&checkout_started=1
+	- duration: ~2905ms
+	- server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+	- server address: ::1
+	- user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+	- remote address: 837ec5754f503cfaaee0929fd48974e7
+
+Post: 
+	- gender: m
+	- firstname: test
+	- lastname: test
+	- email_address: veynstark@gmail.com
+	- c747fd04ba117510f399b5f43ba8155087c19523: YjkwYmU0Y2IzMjVjNDdjZjY0N2YyZjc3YTdmYjdmNTZiZDA2NTM3OEAxNzY2NjgyMTI3
+	- ae6b85682663ab4570bd10c67b83d21fe77cdf97: ZGp2AwL4ZwRlA0OvBGOvMGEwLwZlAJZ0A2AzAwD3MwWzAmquA2MvA2L1AzWxZQL1Zmp4
+	- email_address_confirm: veynstark@gmail.com
+	- b2b_status: 0
+	- company: 
+	- vat: 
+	- street_address: allent 72
+	- postcode: 10115
+	- city: 10115
+	- country: 81
+	- telephone: +4917631931831
+	- fax: mode
+	- password-option: 1
+	- password: *****
+	- confirmation: *****
+	- action: process
+	- timestamp: 1766682123
+
+Get: 
+	- do: CreateRegistree/Proceed
+	- checkout_started: 1
+
+
+

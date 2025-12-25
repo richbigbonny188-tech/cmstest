@@ -1,0 +1,122 @@
+{
+    "id" : "youtube",
+    "title" : "Youtube",
+    "icon" : {
+        "name" : "Youtube",
+        "file" : "youtube.svg"
+    },
+    "author" : {
+        "name" : "Gambio GmbH",
+        "email" : "info@gambio.de",
+        "url" : "https://www.gambio.de"
+    },
+    "helpUrl" : "https://www.gambio.de/help",
+    "description" : "YoutubeWidget.description",
+    "cache" : 0,
+    "version" : "1.0.0",
+    "displayConfig" : "modal",
+    "fieldsets" : [
+        {
+            "title": "YoutubeWidget.options.general.title",
+            "options": [
+                {
+                    "id": "title",
+                    "label": "YoutubeWidget.options.title.label",
+                    "type": "textbox",
+                    "translatable" : true,
+                    "default": {
+                        "de": "",
+                        "en": ""
+                    }
+                },
+                {
+                    "id" : "url",
+                    "label" : "YoutubeWidget.options.url.label",
+                    "placeholder" : "YoutubeWidget.options.url.placeholder",
+                    "type": "textbox",
+                    "translatable" : true,
+                    "attributes" : {
+                        "placeholder" : "YoutubeWidget.options.url.placeholder"
+                    },
+                    "default": {
+                        "de": "",
+                        "en": ""
+                    },
+                    "from" : "contentZoneWidget"
+                }
+            ]
+        },
+        {
+            "title" : "YoutubeWidget.options.settings.title",
+            "options" : [
+                {
+                    "id": "title",
+                    "label": "YoutubeWidget.options.title.label",
+                    "type": "textbox",
+                    "translatable" : false,
+                    "default": ""
+                },
+                {
+                    "id": "responsiveness",
+                    "label": "YoutubeWidget.options.responsiveness.label",
+                    "type": "dropdownselect",
+                    "default": "16by9",
+                    "options": [
+                        {
+                            "text": "YoutubeWidget.options.responsiveness.dropdown.options.custom.label",
+                            "value": "custom"
+                        },
+                        {
+                            "text": "YoutubeWidget.options.responsiveness.dropdown.options.16by9.label",
+                            "value": "16by9"
+                        },
+                        {
+                            "text": "YoutubeWidget.options.responsiveness.dropdown.options.4by3.label",
+                            "value": "4by3"
+                        }
+                    ]
+                },
+                {
+                    "id": "width",
+                    "label": "YoutubeWidget.options.width.label",
+                    "type": "numberbox",
+                    "placeholder": "YoutubeWidget.options.width.placeholder",
+                    "default": "",
+                    "from": "contentZoneWidget",
+                    "visible": {
+                        "id": "responsiveness",
+                        "value": "custom",
+                        "comparison_type": "=="
+                    }
+                },
+                {
+                    "id": "height",
+                    "label": "YoutubeWidget.options.height.label",
+                    "type": "numberbox",
+                    "placeholder": "YoutubeWidget.options.height.placeholder",
+                    "default": "",
+                    "from": "contentZoneWidget",
+                    "visible": {
+                        "id": "responsiveness",
+                        "value": "custom",
+                        "comparison_type": "=="
+                    }
+                },
+                {
+                    "id": "id",
+                    "label": "YoutubeWidget.options.id.label",
+                    "type": "textbox",
+                    "translatable" : false,
+                    "default": ""
+                },
+                {
+                    "id": "showPlayerControls",
+                    "label": "YoutubeWidget.options.showPlayerControls.label",
+                    "type": "checkbox",
+                    "default" : true,
+                    "from": "contentZoneWidget"
+                }
+            ]
+        }
+    ]
+}

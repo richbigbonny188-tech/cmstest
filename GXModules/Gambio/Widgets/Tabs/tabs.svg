@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="55px" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32">
+	<style>.st0{fill:none;stroke:#fff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}</style>
+    <path d="M12 10V5H4c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h24c1.1 0 2-.9 2-2V10H12z" class="st0"></path>
+    <path d="M30 10H12V5h16c1.1 0 2 .9 2 2v3zM18 5v5M24 5v5M6 8h2" class="st0"></path>
+</svg>

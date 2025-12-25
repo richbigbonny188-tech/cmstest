@@ -1,0 +1,120 @@
+{
+    "id" : "accordion",
+    "title" : "accordionWidget.title",
+    "icon" : {
+        "name" : "Image",
+        "file" : "accordion.svg"
+    },
+    "author" : {
+        "name" : "Gambio GmbH",
+        "email" : "info@gambio.de",
+        "url" : "https://www.gambio.de"
+    },
+    "helpUrl" : "https://www.gambio.de/help",
+    "description" : "accordionWidget.description",
+    "cache" : 0,
+    "version" : "1.0.0",
+    "displayConfig" : "sidebar",
+    "fieldsets" : [
+        {
+            "title" : "accordionWidget.options.contents.title",
+            "options" : [
+                {
+                    "id" : "repeater",
+                    "type" : "repeater",
+                    "label" : "Accordion",
+                    "attributes" : {
+                        "min" : 1,
+                        "itemLabel" : "accordionWidget.options.attributes.itemLabel",
+                        "addMoreLabel" : "accordionWidget.options.attributes.addMoreLabel",
+                        "canSetDefaultActiveIndex" : true,
+                        "defaultActiveIndex" : 0
+                    },
+                    "fields" : [
+                        {
+                            "id" : "title",
+                            "type" : "textbox",
+                            "translatable" : true,
+                            "label" : "accordionWidget.options.title.label",
+                            "attributes" : {
+                                "placeholder" : "accordionWidget.options.title.placeholder"
+                            },
+                            "default" : {
+                                "en" : "",
+                                "de" : ""
+                            }
+                        },
+                        {
+                            "id" : "content",
+                            "type" : "texteditor",
+                            "translatable" : true,
+                            "label" : "accordionWidget.options.content.label",
+                            "attributes" : {
+                                "placeholder" : "accordionWidget.options.content.placeholder"
+                            },
+                            "default" : {
+                                "en" : "",
+                                "de" : ""
+                            }
+                        }
+                    ],
+                    "default" : [
+                        [
+                            {
+                                "id" : "accordion-title",
+                                "type" : "textbox",
+                                "translatable" : true,
+                                "label" : "accordionWidget.options.title.label",
+                                "attributes" : {
+                                    "placeholder" : "accordionWidget.options.title.placeholder"
+                                },
+                                "default" : {
+                                    "en" : "",
+                                    "de" : ""
+                                },
+                                "repeaterField" : "title"
+                            },
+                            {
+                                "id" : "accordion-content",
+                                "type" : "texteditor",
+                                "translatable" : true,
+                                "label" : "accordionWidget.options.content.label",
+                                "attributes" : {
+                                    "placeholder" : "accordionWidget.options.content.placeholder"
+                                },
+                                "default" : {
+                                    "en" : "",
+                                    "de" : ""
+                                },
+                                "repeaterField" : "content"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "accordionWidget.options.general.title",
+            "options" : [
+                {
+                    "id" : "id",
+                    "default" : "my-accordion",
+                    "type" : "textbox",
+                    "attributes" : {
+                        "placeholder" : "accordionWidget.options.id.placeholder"
+                    },
+                    "label" : "accordionWidget.options.id.label"
+                },
+                {
+                    "id" : "class",
+                    "default" : "",
+                    "type" : "textbox",
+                    "attributes" : {
+                        "placeholder" : "accordionWidget.options.class.placeholder"
+                    },
+                    "label" : "accordionWidget.options.class.label"
+                }
+            ]
+        }
+    ]
+}

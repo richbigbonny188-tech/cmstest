@@ -1,0 +1,11 @@
+{*==========================================================================
+  Source File: /GXModules/Gambio/CookieConsentPanel/Shop/Themes/All/layout_footer.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}layout_footer.0.html"}
+
+{block name="box_content_list_items" append}
+	{load_language_text section="cookie_consent_panel" name="txt"}
+	{if cookie_consent_panel_is_installed()}
+		<li><a href="javascript:;" trigger-cookie-consent-panel>{$txt.label_cpc_footer_link_text}</a></li>
+	{/if}
+{/block}

@@ -1,0 +1,12 @@
+{*==========================================================================
+  Source File: /GXModules/Gambio/KlarnaOSM/Shop/Themes/All/cart.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}cart.0.html"}
+
+{block name="cart_alert" append}
+    {if $KLARNAOSM_CART_TOP}
+        <div class="klarnaosm klarnaosm_cart_top">
+            {$KLARNAOSM_CART_TOP}
+        </div>
+    {/if}
+{/block}

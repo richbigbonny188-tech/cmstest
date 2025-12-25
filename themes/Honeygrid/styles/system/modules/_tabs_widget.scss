@@ -1,0 +1,21 @@
+/* Tabs Widget
+   ========================================================================== */
+.tabs-widget {
+    .nav-tabs {
+        height: auto;
+        & > li {
+            position: relative;
+            top: 3px;
+            &.active {
+                border-bottom: none;
+                & > a {
+                    border-bottom: 3px solid $gx-tab-border-color-active;
+                }
+            }
+        }
+    }
+    
+    .tab-content {
+        padding: 30px 0;
+    }
+}

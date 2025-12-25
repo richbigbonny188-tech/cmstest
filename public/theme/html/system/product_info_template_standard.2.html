@@ -1,0 +1,10 @@
+{*==========================================================================
+  Source File: /GXModules/Gambio/OmnibusPolicy/Shop/Themes/All/product_info_template_standard.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}product_info_template_standard.1.html"}
+
+{block name="rating_stars" append}
+    {if $omnibusPolicyProductListingBadge}
+        <span class="product-rating-asterisk">*</span>
+    {/if}
+{/block}

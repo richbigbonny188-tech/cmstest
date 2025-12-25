@@ -1,0 +1,104 @@
+.accordion-widget {
+    .panel {
+        overflow: hidden;
+        border-color: $gx-accordion-widget-border-color;
+        border-radius: $gx-accordion-widget-border-radius;
+        
+        &+.panel {
+            margin-top: $gx-accordion-widget-panels-distance;
+        }
+    }
+    .panel-heading {
+        padding: 0;
+        box-shadow: none;
+        background: none;
+        
+        .panel-title {
+            padding: 0;
+            
+            a {
+                position: relative;
+                display: block;
+                padding: $gx-accordion-widget-heading-padding;
+                font-size: $gx-accordion-widget-heading-font-size;
+                font-weight: $gx-accordion-widget-heading-font-weight;
+                background-color: $gx-accordion-widget-heading-active-bg;
+                color: $gx-accordion-widget-heading-active-color;
+                
+                &:after {
+                    @include fa-icon;
+                    content: "\f068";
+                    position: absolute;
+                    top: 50%;
+                    right: $gx-accordion-widget-icon-right-padding;
+                    transform: translateY(-50%);
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    color: $gx-accordion-widget-icon-active-color;
+                }
+                
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                }
+                
+                &.collapsed {
+                    background-color: $gx-accordion-widget-heading-bg;
+                    color: $gx-accordion-widget-heading-color;
+                    
+                    &:after {
+                        content: "\f067";
+                        color: $gx-accordion-widget-icon-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    .panel-body {
+        padding: $gx-accordion-widget-body-padding;
+        background-color: $gx-accordion-widget-body-bg;
+        border-top-color: $gx-accordion-widget-border-color !important;
+        border-radius: 0 0 $gx-accordion-widget-border-radius $gx-accordion-widget-border-radius;
+        color: $gx-accordion-widget-body-color;
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    //
+    // Component animations
+    // --------------------------------------------------
+    
+    .fade {
+        opacity: 0;
+        @include transition(opacity .15s linear);
+        
+        &.in {
+            opacity: 1;
+        }
+    }
+    
+    .collapse {
+        display: none;
+        
+        &.in      { display: block; }
+        // [converter] extracted tr&.in to tr.collapse.in
+        // [converter] extracted tbody&.in to tbody.collapse.in
+    }
+    
+    tr.collapse.in    { display: table-row; }
+    
+    tbody.collapse.in { display: table-row-group; }
+    
+    .collapsing {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        @include transition-property(height, visibility);
+        @include transition-duration(.35s);
+        @include transition-timing-function(ease);
+    }
+}

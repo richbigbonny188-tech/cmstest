@@ -1,0 +1,156 @@
+{
+	"id": "newsletter",
+	"title": "NewsletterWidget.title",
+	"icon": {
+		"name": "Image",
+		"file": "newsletter.svg"
+	},
+	"author": {
+		"name": "Gambio GmbH",
+		"email": "info@gambio.de",
+		"url": "https://www.gambio.de"
+	},
+	"helpUrl": "https://www.gambio.de/help",
+	"description": "NewsletterWidget.description",
+	"cache": 0,
+	"version": "1.0.0",
+	"displayConfig": "sidebar",
+	"fieldsets": [
+		{
+			"title": "NewsletterWidget.options.general.title",
+			"options": [
+				{
+					"id": "id",
+					"label": "NewsletterWidget.options.id.label",
+					"type": "textbox",
+					"placeholder": "NewsletterWidget.options.id.placeholder",
+					"default": ""
+				},
+				{
+					"id": "class",
+					"label": "NewsletterWidget.options.class.label",
+					"type": "textbox",
+					"placeholder": "NewsletterWidget.options.class.placeholder",
+					"default": ""
+				},
+				{
+					"id": "input-label",
+					"label": "NewsletterWidget.options.inputLabel.label",
+					"type": "textbox",
+					"placeholder": "NewsletterWidget.options.inputLabel.placeholder",
+					"translatable": true,
+					"default": {
+						"de": "",
+						"en": ""
+					}
+				},
+				{
+					"id": "inputPlaceholder",
+					"label": "NewsletterWidget.options.inputPlaceholder.label",
+					"type": "textbox",
+					"placeholder": "NewsletterWidget.options.inputPlaceholder.placeholder",
+					"translatable": true,
+					"default": {
+						"de": "Deine E-Mail-Addresse",
+						"en": "Your email address"
+					}
+				},
+				{
+					"id": "inputHelpText",
+					"label": "NewsletterWidget.options.inputHelpText.label",
+					"type": "textbox",
+					"placeholder": "NewsletterWidget.options.inputHelpText.placeholder",
+					"translatable": true,
+					"default": {
+						"de": "",
+						"en": ""
+					}
+				},
+				{
+					"id": "buttonLabel",
+					"label": "NewsletterWidget.options.buttonLabel.label",
+					"type": "textbox",
+					"placeholder": "NewsletterWidget.options.buttonLabel.placeholder",
+					"translatable": true,
+					"default": {
+						"de": "Jetzt anmelden",
+						"en": "Subscribe"
+					}
+				}
+			]
+		},
+		{
+			"title": "NewsletterWidget.options.design.layout.title",
+			"options": [
+				{
+					"id": "form-layout",
+					"type": "radioimage",
+					"label": "NewsletterWidget.options.design.layout.label",
+					"options": [
+						{
+							"id": "horizontal-form",
+							"title": "Horizontal",
+							"thumbnail": "../../../../GXModules/Gambio/Widgets/Newsletter/Assets/Images/horizontal-form.png"
+						},
+						{
+							"id": "vertical-form",
+							"title": "Vertical",
+							"thumbnail": "../../../../GXModules/Gambio/Widgets/Newsletter/Assets/Images/vertical-form.png"
+						}
+					],
+					"default": "horizontal-form"
+				}
+			]
+		},
+		{
+			"title": "ButtonWidget.options.design.size",
+			"options": [
+				{
+					"id": "size",
+					"type": "radioimage",
+					"label": "Size",
+					"options": [
+						{
+							"id": "sm",
+							"title": "Small",
+							"thumbnail": "../../../../GXModules/Gambio/Widgets/Button/Assets/Images/button-size-sm.png"
+						},
+						{
+							"id": "",
+							"title": "Normal",
+							"thumbnail": "../../../../GXModules/Gambio/Widgets/Button/Assets/Images/button-size-md.png"
+						},
+						{
+							"id": "lg",
+							"title": "Large",
+							"thumbnail": "../../../../GXModules/Gambio/Widgets/Button/Assets/Images/button-size-lg.png"
+						}
+					],
+					"default": ""
+				}
+			]
+		},
+		{
+			"title": "ButtonWidget.options.design.type",
+			"options": [
+				{
+					"id": "buttonType",
+					"type": "radioimage",
+					"options": [
+						{
+							"id": "btn-primary",
+							"title": "Primary",
+							"thumbnail": "../Api/api.php/styleedit/de/buttonimage/{THEME_ID}/brand-primary/cccccc/{STYLE_NAME}"
+						},
+						{
+							"id": "btn-secondary",
+							"title": "Secondary",
+							"thumbnail": "../Api/api.php/styleedit/de/buttonimage/{THEME_ID}/gx-brand-secondary/cccccc/{STYLE_NAME}"
+						}
+					],
+					"default": "btn-primary"
+				}
+			]
+		}
+	]
+}

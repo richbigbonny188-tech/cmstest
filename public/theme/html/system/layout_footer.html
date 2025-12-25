@@ -1,0 +1,12 @@
+{*==========================================================================
+  Source File: /GXModules/Gambio/KlarnaOSM/Shop/Themes/All/layout_footer.html
+  ========================================================================== *}
+{extends file="get_usermod:{$tpl_path}layout_footer.1.html"}
+
+{block name="layout_footer_inside" append}
+    {if $KLARNAOSM_FOOTER_BOTTOM}
+        <div class="klarnaosm klarnaosm_footer_bottom inside">
+            {$KLARNAOSM_FOOTER_BOTTOM}
+        </div>
+    {/if}
+{/block}
